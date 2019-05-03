@@ -1,0 +1,10 @@
+[package]
+name = "codeography"
+version = "0.1.0"
+authors = ["adamnieto <anieto1@binghamton.edu>"]
+
+[dependencies]
+clap = "*"
+steganography = "*"
+spinners = "*"
+ansi-escapes = "*"
