@@ -3,9 +3,9 @@
 A CLI that creates beautiful code snippet images using `carbon-now-cli` ([here](https://github.com/mixn/carbon-now-cli)) that can encoded and decoded to encapsulate and generate the source code these code snippets represent via steganography. 
 
 To understand a little bit better here is a diagram to explain:
-<p align="center">
-<img src="https://github.com/adamnieto/codeography/raw/master/diagram.png" width="600" height="800">
-</p>
+
+
+![alt text](https://raw.githubusercontent.com/adamnieto/codeography/master/diagram.png)
 
 **Summary:** Generate source code of the code snippet image itself.
 
