@@ -7,8 +7,6 @@ To understand a little bit better here is a diagram to explain:
 
 ![alt text](https://raw.githubusercontent.com/adamnieto/codeography/master/diagram.png)
 
-**Summary:** Generate source code of the code snippet image itself.
-
 
 ## Inspiration and Use Case
 
