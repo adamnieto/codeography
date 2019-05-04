@@ -1,6 +1,6 @@
 # :camera: codeography
 ---
-A CLI that creates beautiful code snippet images using `carbon-now-cli` ([here](https://github.com/mixn/carbon-now-cli)) however, it can also encapsulate and generate the source code these code snippets represent pictorially via steganography. 
+A CLI that creates code snippet images using `carbon-now-cli` ([here](https://github.com/mixn/carbon-now-cli)), however, it can also encapsulate and generate the source code these code snippets represent pictorially via steganography. 
 
 To understand a little bit better here is a diagram to explain:
 
@@ -10,11 +10,11 @@ To understand a little bit better here is a diagram to explain:
 
 ## Inspiration and Use Case
 
-* The inspiration for this project comes out of the need for providing customizable syntax highlighting to code snippets through an image without losing the ability to copy and paste the code the code snippet image represents pictorially. Intrinsically, this tool does the copying and pasting for you by simply generating the file from the code image you are looking at.
+* The inspiration for this project comes out of the need for providing customizable syntax highlighting to code snippets through an image without losing the ability to copy and paste the source code the code-snippet image represents pictorially. Intrinsically, this tool does the copying and pasting for you by simply generating the file from the code-snippet image you already have.
 
-* This tool can be used to encode a source file of a program but display pictorially the pseudo code of that program.
+* This tool can be used to encode a source file of a program but display pictorially the pseudocode of that program.
 
-* This CLI is useful for presentations that may contain code snippets, allowing the presentater avoid styling manually for a presentation but also not sacrafice the ability for viewers to download that code snippet.
+* This CLI is useful for presentations that may contain code snippets, allowing the presenter to avoid styling the code manually for a slide but also not burden viewers in having to download a separate file, or copy/paste (formatting may screw up) the code snippet.
 
 ---
 
@@ -58,7 +58,7 @@ codeography imagify code_snippet.rs
 
 [![asciicast](https://asciinema.org/a/244240.svg)](https://asciinema.org/a/244240)
 
-### Encoding a code snippet image to steganographic code snippet
+### Encoding a code-snippet image to steganographic code-snippet image
 
 ```
 codeography <INPUT_CODE_FILE> <INPUT_IMAGE_TO_ENCODE> <ENCODE_OUTPUT_IMAGE_FILE_NAME>
@@ -74,7 +74,7 @@ codeography code_snippet.rs code_snippet.png codeography_code_snippet
 
 [![asciicast](https://asciinema.org/a/244241.svg)](https://asciinema.org/a/244241)
 
-### Decoding a steganographic code snippet image to its original source code file
+### Decoding a steganographic code-snippet image to its original source code file
 
 ```
 codeography decode <INPUT_IMAGE_TO_DECODE> <DECODE_OUTPUT_FILE_NAME>
