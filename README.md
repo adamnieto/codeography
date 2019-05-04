@@ -4,7 +4,8 @@ A CLI that creates beautiful code snippet images using `carbon-now-cli` ([here](
 
 To understand a little bit better here is a diagram to explain:
 
-![diagram](diagram.png)
+
+![alt text](https://raw.githubusercontent.com/adamnieto/codeography/master/diagram.png)
 
 **Summary:** Generate source code of the code snippet image itself.
 
