@@ -12,11 +12,11 @@ To understand a little bit better here is a diagram to explain:
 
 ## Inspiration and Use Case?
 
-* The inspiration for this project comes out of the need for providing beautiful syntax highlighting and elegance to code in a customizable way without losing the ability to copy and paste the code. In fact, this tool does the copy and pasting for you by simply generating the file you are looking at.
+* The inspiration for this project comes out of the need for providing customizable syntax highlighting to code snippets through an image without losing the ability to copy and paste the code the code snippet image represents pictorially. Intrinsically, this tool does the copying and pasting for you by simply generating the file from the code image you are looking at.
 
-* Additionally, this tool can be used to encode full source but only display a small part or perhaps pseudo code via the the actual image.
+* This tool can be used to encode a source file of a program but display pictorially the pseudo code of that program.
 
-* Instead of downloading the source files or writing code on a presentation or document one can simply have those code snippets or files generated without the need to copy/paste, re-write code, or even download the source code over the internet as the very code itself is encapsulated inside of the pixels of the image. Simply use this CLI and the soure file is generated for you automatically.
+* This CLI is useful for presentations that may contain code snippets, allowing the presentater avoid styling manually for a presentation but also not sacrafice the ability for viewers to download that code snippet.
 
 ---
 
