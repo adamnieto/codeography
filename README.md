@@ -90,3 +90,10 @@ codeography decode codeography_code_snippet.png code_snippet
 ```
 
 [![asciicast](https://asciinema.org/a/244243.svg)](https://asciinema.org/a/244243)
+
+---
+## Notes
+
+This project is still in its early stages. If you find any bugs please report them in the issues tab. 
+
+
