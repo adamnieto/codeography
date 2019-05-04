@@ -68,7 +68,7 @@ fn main(){
     let matches = App::new("codeography")
                         .version("0.1.0")
                         .author("Adam Nieto <anieto1@binghamton.edu>")
-                        .about("A CLI that creates beautiful code snippet images usincg Carbon-Now as well as encodes the actual code snippet in the image using steganography. Additionally, it can decode the code image and generate a corresponding code file.")
+                        .about("Create, encode, and decode image code snippets into what they represent pictorially via steganography")
                         .subcommand(SubCommand::with_name("encode")
                             .about("Encodes code snippet image with its actual source using steganography")
                                 .arg(Arg::with_name("INPUT_CODE_FILE")
