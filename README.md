@@ -1,6 +1,6 @@
 # :camera: codeography
 ---
-A CLI that creates beautiful code snippet images using `carbon-now-cli` ([here](https://github.com/mixn/carbon-now-cli)) that can encoded and decoded to encapsulate and generate the source code these code snippets represent via steganography. 
+A CLI that creates beautiful code snippet images using `carbon-now-cli` ([here](https://github.com/mixn/carbon-now-cli)) that can encapsulate as well as generate the source code these code snippets represent pictorially via steganography. 
 
 To understand a little bit better here is a diagram to explain:
 
