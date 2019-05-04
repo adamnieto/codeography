@@ -24,12 +24,20 @@ To understand a little bit better here is a diagram to explain:
 
 1. Make sure that you have already installed the `carbon-now-cli`. Follow the installation rules [here](https://github.com/mixn/carbon-now-cli).
 
-2. Download this repo:
+2. [Install Rust](https://www.rust-lang.org/tools/install/)
+
+3. Download this repo:
 
 ```bash
 git clone https://github.com/adamnieto/codeography.git
 
-``` 
+```
+
+4. Once inside of the `codeography` directory run the following command: 
+
+```
+cargo install --path .
+```
 
 ---
 ## Usage:
