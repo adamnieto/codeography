@@ -10,7 +10,7 @@ To understand a little bit better here is a diagram to explain:
 **Summary:** Generate source code of the code snippet image itself.
 
 
-## Inspiration and Use Case?
+## Inspiration and Use Case
 
 * The inspiration for this project comes out of the need for providing customizable syntax highlighting to code snippets through an image without losing the ability to copy and paste the code the code snippet image represents pictorially. Intrinsically, this tool does the copying and pasting for you by simply generating the file from the code image you are looking at.
 
