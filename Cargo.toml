@@ -4,7 +4,7 @@ version = "0.1.0"
 authors = ["adamnieto <anieto1@binghamton.edu>"]
 
 [dependencies]
-clap = "*"
-steganography = "*"
-spinners = "*"
-ansi-escapes = "*"
+clap = "2.27.1"
+steganography = "1.0.1"
+spinners = "1.0.0"
+ansi-escapes = "0.1.0"
