@@ -20,6 +20,19 @@ To understand a little bit better here is a diagram to explain:
 
 ## Installation:
 
+## Installing using Dev Container (recommended)
+
+**Pre-requisites:** Please make sure that you have Docker installed on your machine and you are using Visual Studio Code. 
+
+1. Download this repo:
+
+```bash
+git clone https://github.com/adamnieto/codeography.git
+```
+2. Wait for the dev container to finish running including the `postCreateCommand` once that has finished it should have installed the `codeography` command and you can start using it.
+
+### Installing Manually
+
 1. Make sure that you have already installed the `carbon-now-cli`. Follow the installation rules [here](https://github.com/mixn/carbon-now-cli).
 
 2. [Install Rust](https://www.rust-lang.org/tools/install/)
