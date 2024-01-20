@@ -20,7 +20,7 @@ To understand a little bit better here is a diagram to explain:
 
 ## Installation:
 
-## Installing using Dev Container (recommended)
+### Installing using Dev Container (recommended)
 
 **Pre-requisites:** Please make sure that you have Docker installed on your machine and you are using Visual Studio Code. 
 
