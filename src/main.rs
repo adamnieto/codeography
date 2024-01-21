@@ -76,7 +76,7 @@ fn encode(code_path: &Path, photo_path: &Path, output_name: String){
 fn main(){
     let matches = App::new("codeography")
                         .version("0.1.0")
-                        .author("Adam Nieto <anieto1@binghamton.edu>")
+                        .author("Adam Nieto <adam.s.nieto@gmail.com>")
                         .about("Create, encode, and decode image code snippets into what they represent pictorially via steganography")
                         .subcommand(SubCommand::with_name("encode")
                             .about("Encodes code snippet image with its actual source using steganography")
