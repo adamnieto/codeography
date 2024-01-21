@@ -82,7 +82,7 @@ Example:
 In this example the CLI will create `codeography_code_snippet.png`.
 
 ```
-codeography encode code_snippet.rs code_snippet.png codeography_code_snippet.png
+codeography encode code_snippet.rs code_snippet.png codeography_code_snippet
 ```
 
 [![asciicast](https://asciinema.org/a/244241.svg)](https://asciinema.org/a/244241)
