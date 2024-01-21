@@ -17,7 +17,7 @@ In other words, steganography is a way for us to hide messages within everyday f
 
 * The inspiration for this project comes out of the need for providing customizable syntax highlighting to code snippets through an image without losing the ability to copy and paste the source code the code-snippet image represents pictorially. Intrinsically, this tool does the copying and pasting for you by simply generating the file from the code-snippet image you already have.
 
-* This tool can be used to encode a source file of a program but display pictorially the pseudocode of that program.
+* For instance, this tool can be used to encode a source file of a program but display pictorially the pseudocode of that program.
 
 * This CLI is useful for presentations that may contain code snippets, allowing the presenter to avoid styling the code manually for a slide but also not burden viewers in having to download a separate file, or copy/paste (formatting may screw up) the code snippet.
 
