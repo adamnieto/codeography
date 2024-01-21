@@ -5,7 +5,7 @@ A CLI that creates code snippet images using `carbon-now-cli` ([here](https://gi
 To understand a little bit better here is a diagram to explain:
 
 
-![alt text](https://raw.githubusercontent.com/adamnieto/codeography/master/diagram.png)
+![alt text](https://raw.githubusercontent.com/adamnieto/codeography/main/codeography_diagram.png)
 
 ## What is Steganography? 
 
