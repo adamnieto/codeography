@@ -65,7 +65,6 @@ fn encode(code_path: &Path, photo_path: &Path, output_name: String){
     let enc = Encoder::new(payload, destination_image.expect("Something is wrong with the input image file.\n"));
     //Encode our message into the alpha channel of the image
     let result = enc.encode_alpha();
-    // println!("{}", photo_path_extension_type);
     //Save the new image
     let res = Some(save_image_buffer(result,(output_name + "." + photo_path_extension_type).to_string()));
     if res.is_none() {
