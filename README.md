@@ -7,6 +7,11 @@ To understand a little bit better here is a diagram to explain:
 
 ![alt text](https://raw.githubusercontent.com/adamnieto/codeography/master/diagram.png)
 
+## What is Steganography? 
+
+Steganography is the process of representing information within another message or physical/virtual object in such a way that is not evident in plain sight or after human inspection.
+
+In other words, steganography is a way for us to hide messages within everyday files or objects. 
 
 ## Inspiration and Use Case
 
