@@ -20,9 +20,9 @@ fn decode(image_path: &Path, out_file_name: String) -> Option<String>{
     //Load the image with the secret message
     let encoded_image = Some(file_as_image_buffer(image_path.to_str().unwrap().to_owned()))?;
     //Create a decoder
-    let dec = Decoder::new(encoded_image);
+    let dec: Decoder = Decoder::new(encoded_image);
     //Decode the image by reading the alpha channel
-    let out_buffer = dec.decode_alpha();
+    let out_buffer: Vec<u8> = dec.decode_alpha();
     //If there is no alpha, it's set to 255 by default so we filter those out
     let clean_buffer: Vec<u8> = out_buffer.into_iter().filter(|b| {
                                             *b != 0xff_u8
@@ -31,7 +31,8 @@ fn decode(image_path: &Path, out_file_name: String) -> Option<String>{
     let messg_vec:  Vec<&str> = bytes_to_str(clean_buffer.as_slice()).lines().collect();
     // Separate extension encoded and code body 
     let extension = messg_vec[0].to_owned();
-    let raw_code_body = messg_vec[1..messg_vec.len()-1].join("\n");
+    let raw_code_body = messg_vec[1..messg_vec.len()].join("\n");
+
     let code_body = raw_code_body.trim_matches(char::from(0)); // removes end of text unicode characters
     // Create filename from output path provided
     let file_name = format!("{}.{}",out_file_name,extension);
@@ -43,7 +44,15 @@ fn decode(image_path: &Path, out_file_name: String) -> Option<String>{
 
 fn encode(code_path: &Path, photo_path: &Path, output_name: String){
     let extension_type = code_path.extension().unwrap().to_str().unwrap();
- 
+    let allowed_photo_extensions = vec!["png","svg", "jpg", "jpeg"];
+    let photo_path_extension_type = photo_path.extension().unwrap().to_str().unwrap();
+    let mut is_allowed_extension = false;
+    if allowed_photo_extensions.iter().any(|&extension| extension==photo_path_extension_type){
+        is_allowed_extension = true;
+    }
+    if !is_allowed_extension {
+        println!("Error: The extension '{}' is not a support photo extension.", photo_path_extension_type);
+    }
     let file_body = fs::read_to_string(code_path) 
                     .expect("Something went wrong reading the file");
     let mut code_body = extension_type.to_owned() + "\n"; // Add this to encode the file name in the image
@@ -56,8 +65,9 @@ fn encode(code_path: &Path, photo_path: &Path, output_name: String){
     let enc = Encoder::new(payload, destination_image.expect("Something is wrong with the input image file.\n"));
     //Encode our message into the alpha channel of the image
     let result = enc.encode_alpha();
+    // println!("{}", photo_path_extension_type);
     //Save the new image
-    let res = Some(save_image_buffer(result,(output_name + ".png").to_string()));
+    let res = Some(save_image_buffer(result,(output_name + "." + photo_path_extension_type).to_string()));
     if res.is_none() {
         println!("Error: Issue saving image to output file.");
     }

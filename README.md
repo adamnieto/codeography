@@ -74,7 +74,7 @@ codeography imagify code_snippet.rs
 ### Encoding a code-snippet image to steganographic code-snippet image
 
 ```
-codeography <INPUT_CODE_FILE> <INPUT_IMAGE_TO_ENCODE> <ENCODE_OUTPUT_IMAGE_FILE_NAME>
+codeography encode <INPUT_CODE_FILE> <INPUT_IMAGE_TO_ENCODE> <ENCODE_OUTPUT_IMAGE_FILE_NAME>
 ```
 
 Example: 
@@ -82,7 +82,7 @@ Example:
 In this example the CLI will create `codeography_code_snippet.png`.
 
 ```
-codeography code_snippet.rs code_snippet.png codeography_code_snippet
+codeography encode code_snippet.rs code_snippet.png codeography_code_snippet.png
 ```
 
 [![asciicast](https://asciinema.org/a/244241.svg)](https://asciinema.org/a/244241)
